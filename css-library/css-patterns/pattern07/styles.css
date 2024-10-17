@@ -1,0 +1,6 @@
+.box {
+  width: 400px;
+  aspect-ratio: 1;
+  border: 1px solid;
+  background: conic-gradient(at 50% 50%, red, blue, yellow);
+}
