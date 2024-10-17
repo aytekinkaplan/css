@@ -10,6 +10,7 @@ body {
   align-items: center;
   height: 100vh;
   padding: 20px;
+  background-color: #f4f4f4;
 }
 
 .container {
@@ -24,7 +25,7 @@ body {
   gap: 20px;
   padding: 20px;
   width: 100%;
-  max-width: 1200px; /* Genişliği sınırla */
+  max-width: 1200px;
 }
 
 /* Ortak stiller */
@@ -32,45 +33,58 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 10px;
-  border: 2px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
   text-align: center;
   color: white;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  min-height: 150px; /* Grid alanının minimum yüksekliği */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  min-height: 150px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover efekti */
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Grid elemanlarına özel alan tanımları ve background resimleri */
 .item-1 {
   grid-area: header;
-  background-image: url("https://picsum.photos/200/300?random=1");
+  background: repeating-conic-gradient(#0033cc 0 25%, #99ccff 0 50%) 0 / 100px
+    100px;
 }
 
 .item-2 {
   grid-area: main;
-  background-color: #333; /* Geçici arka plan rengi */
+  background-color: #555;
+  background: linear-gradient(135deg, #333, #777);
 }
 
 .item-3 {
   grid-area: sidebar;
-  background-image: url("https://picsum.photos/200/300?random=2");
+  background: repeating-conic-gradient(#1e90ff 0 25%, #32cd32 0 50%) 0 / 100px
+    100px;
 }
 
 .item-4 {
   grid-area: section;
-  background-image: url("https://picsum.photos/200/300?random=3");
+  background: repeating-conic-gradient(#ff4500 0 25%, #ff6347 0 50%) 0 / 100px
+    100px;
 }
 
 .item-5 {
   grid-area: article;
-  background-image: url("https://picsum.photos/200/300?random=4");
+  background: repeating-conic-gradient(#ff69b4 0 25%, #ffb6c1 0 50%) 0 / 100px
+    100px;
 }
 
 .item-6 {
   grid-area: footer;
-  background-image: url("https://picsum.photos/200/300?random=5");
+  background: repeating-conic-gradient(#2c3e50 0 25%, #bdc3c7 0 50%) 0 / 100px
+    100px;
 }
