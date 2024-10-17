@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0b0c0c; /* Light background to resemble paper */
+  background-image: linear-gradient(
+      90deg,
+      rgba(232, 222, 222, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(rgba(244, 239, 239, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px; /* Grid size resembling a notebook */
+}
+
+.notebook {
+  width: 400px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  border: 2px solid #ccc; /* Border to resemble paper edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  text-align: center;
+}
+
+.notebook h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.notebook p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
