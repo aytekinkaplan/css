@@ -59,12 +59,17 @@ const fetchCityPhotos = (city) => {
           imageContainer.appendChild(imgElement);
 
           // Add click event to enlarge image
-          imgElement.addEventListener("click", () => {
+          imgElement.addEventListener("click", (event) => {
+            event.stopPropagation();
             // Remove any previous enlarged image
             document
               .querySelectorAll(".enlarged")
               .forEach((img) => img.classList.remove("enlarged"));
-            imgElement.classList.toggle("enlarged");
+
+            const rect = imgElement.getBoundingClientRect();
+            imgElement.style.top = `${rect.top + window.scrollY}px`;
+            imgElement.style.left = `${rect.left}px`;
+            imgElement.classList.add("enlarged");
           });
         });
       }

@@ -24,21 +24,20 @@ h1 {
 #image-container img {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, width 0.3s ease,
+    top 0.3s ease, left 0.3s ease;
   cursor: pointer;
   max-width: 100%;
   width: 300px;
   height: auto;
+  position: relative;
 }
 
 #image-container img.enlarged {
   transform: scale(2); /* Enlarge the image */
   z-index: 1000; /* Bring the image to the front */
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Add a larger shadow */
-  position: absolute; /* Make it absolute for free positioning */
-  left: 50%; /* Center horizontally */
-  top: 50%; /* Center vertically */
-  transform: translate(-50%, -50%) scale(2); /* Position to center with scale */
+  position: fixed; /* Make it fixed so it stays in the same position */
   border: 2px solid #fff;
   background-color: #fff; /* Add background color */
 }
