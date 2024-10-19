@@ -1,0 +1,39 @@
+/* Body stili */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Başlıklar için stil */
+h1,
+h2 {
+  color: #333;
+}
+
+/* Liste stili */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Liste elemanları stili */
+ul li {
+  padding: 5px 0;
+}
+
+/* Linklerin stili */
+ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Link hover durumu */
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Paragraftaki link stili */
+p a {
+  color: #28a745;
+}
